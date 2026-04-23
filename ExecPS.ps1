@@ -6,6 +6,7 @@ $computers = Import-Csv -Path "C:\IT\Deployment\computers.csv" |
 # Проверяем компьютеры
 if (-not $computers) {
     Write-Warning "Не найдено компьютеров отдела Бухгалтерия в CSV файле"
+    Pause
     exit
 }
 
